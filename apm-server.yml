@@ -1,0 +1,14 @@
+apm-server:
+  host:"0.0.0.0:8200"
+  concurrent_requests:5
+  
+  queue.mem.events:4096
+  max_procs:4
+  
+  output.elasticsearch:
+  hosts: ["http://elastocsearch:9200"]
+  username: "admin"
+  password: "admin"
+  
+  logging.level: info
+  logging.to_files: false
